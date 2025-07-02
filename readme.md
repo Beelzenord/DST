@@ -12,7 +12,7 @@ The solution
 Bonus assignments I did
 
 - printing the full expression in Euclidean form, using same recursive technique
-- Serializing the object in JSON format, similiarily to print() and evaluate(), Though the protocol must be invoked using JSON.stringify('name_of_ast'),
+- Serializing the object in JSON format, similiarily to print() and evaluate(), Though the protocol must be invoked using JSON.stringify('name_of_ast').
 - error handling for division by zero, and invalid operators
 
 Bonus assignments I missed
@@ -30,11 +30,14 @@ How I worked.
 
 What I used AI for
 
-* Scaffolding tsconfig and testing code as well as generating launch.json to help me enable running
+* Scaffolding tsconfig and testing code with jest (also testcases) as well as generating launch.json to help me enable running
 the code in debug mode with breakpoints. 
 
 * genererating custom errors.
 
+* occasional bug fixes
+
+* generating annotation of classes/interfaces.
 
 
 Further improvement recommendations:
@@ -43,7 +46,11 @@ Further improvement recommendations:
 
 * Implementation of the comparators
 
+* More thoroughness with error handling
+
 * Updating the print() so that it dynamically inserts paranthesis
+
+
 
     
 
