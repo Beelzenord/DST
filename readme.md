@@ -1,3 +1,34 @@
+Run the code.
+
+- git clone
+
+- npm install
+
+- testing : npm run test 
+
+- run : npm run start
+
+use case
+
+Create AST Node :
+
+const node = new BinaryOperation(new NumberNodeInstance(1), new NumberNodeInstance(3),"+");
+- NumberNodeInstance must use a number
+- BinaryOperation requires a string reference to a valid operator ("+"|"-"|"/"|"*")
+
+
+Evaluate an arithmentic operation:
+
+node.evaluate()
+
+Print the expression
+
+node.print()
+
+Serialize
+
+JSON.stringify(node)
+
 The solution
 
 - An implementation of the DST
@@ -20,8 +51,10 @@ Bonus assignments I missed
 
 
 How I worked.
-* Read up on AST's for research,
+* Read up on AST's for research.
 * Pen and paper to facilitate how I should proceed.
+* Copy-pasted interfaces, created the classes and implementation. First method I worked on was evaluation
+- Compared pen and paper illustration with results I read from console logs and breakpoints.
 * I'm familiar with depth-first recursion especially from school, but needed bring myself up to speed with research.
 * Utilized a lot of testing vis-a-vis, breakpoints during testing.
 
