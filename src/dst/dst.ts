@@ -64,20 +64,20 @@ class BinaryOperation implements BinaryOperationNode {
 
     switch (this.operator) {
       case "+":
-        return (leftVal as number) + (rightVal as number);
+        return leftVal + rightVal;
       case "-":
-        return (leftVal as number) - (rightVal as number);
+        return leftVal - rightVal;
       case "*":
-        return (leftVal as number) * (rightVal as number);
+        return leftVal * rightVal;
       case "/":
         if (rightVal === 0) {
           throw new DivisionByZeroError(
-            leftVal as number,
+            leftVal,
             this.operator,
             rightVal,
           );
         }
-        return (leftVal as number) / (rightVal as number);
+        return leftVal / rightVal;
       default:
         throw new InvalidOperatorError("Invalid Operation");
     }
